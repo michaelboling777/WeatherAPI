@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 class Program
 {
-    private static readonly string apiKey = Environment.GetEnvironmentVariable("OPENWEATHER_API_KEY") ?? "f263694865140e6a409e02d24f4fae49";
+    private static readonly string apiKey = Environment.GetEnvironmentVariable("OPENWEATHER_API_KEY");
     private static readonly string baseUrl = "https://api.openweathermap.org/data/2.5/weather";
     private static readonly HttpClient client = new HttpClient();
 
